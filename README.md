@@ -1,5 +1,5 @@
 # ClimateX
-*A cutting-edge climate data visualization and analysis tool powered by React*🌎🌿  
+*A cutting-edge climate data visualization and analysis tool powered by React and Machine Learning*🌎🌿  
 ---
 
 ## ⚠️ Prerequisites  
