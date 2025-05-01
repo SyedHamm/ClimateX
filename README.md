@@ -107,7 +107,7 @@ run_app.bat
 
 #### Mac/Linux Users
 ```bash
-chmod +x run_app.sh  # Make the script executable (first time only)
+chmod +x frontend/node_modules/.bin/react-scripts # Make the script executable (first time only)
 ./run_app.sh
 ```
 
