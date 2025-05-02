@@ -15,4 +15,5 @@ cd ..
 
 # Start the backend server
 cd backend
+export PORT=5000
 exec gunicorn app:app
