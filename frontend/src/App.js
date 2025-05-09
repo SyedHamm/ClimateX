@@ -42,6 +42,7 @@ import SeasonalSummaryChart from './components/SeasonalSummaryChart';
 import HistoricalComparisonChart from './components/HistoricalComparisonChart';
 import ExtremeDaysCard from './components/ExtremeDaysCard';
 import ForecastMetricsCard from './components/ForecastMetricsCard';
+import R2LearningCurveChart from './components/R2LearningCurveChart';
 
 import './App.css';
 import axios from 'axios';
@@ -351,6 +352,22 @@ function App() {
                       metricsMax={modelData.metrics_max}
                       metricsMin={modelData.metrics_min}
                     />
+                  </Grid>
+                  
+                  <Grid item xs={12}>
+                    <Paper elevation={3} sx={{ p: 3 }}>
+                      <Typography variant="h6" gutterBottom>
+                        R² Score Learning Curve
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+                        How model performance (R² score) improves with increasing training data size
+                      </Typography>
+                      <R2LearningCurveChart 
+                        maxData={modelData.r2_curve_max} 
+                        minData={modelData.r2_curve_min}
+                        title="Random Forest R² Learning Curve"
+                      />
+                    </Paper>
                   </Grid>
                   
                   <Grid item xs={12} md={6}>
